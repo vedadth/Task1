@@ -1,4 +1,6 @@
 body {
+  margin: 0px;
+  padding: 0px;
   background: linear-gradient(#eb9797, #9ca3e9);
 }
 
@@ -18,7 +20,7 @@ a {
 }
 
 .container b {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .circle {
@@ -27,13 +29,31 @@ a {
   height: 70px;
   border-radius: 40%;
   background-color: rgb(223, 184, 214);
-  box-shadow: 10px 7px 30px rgba(247, 124, 226, 0.925);
+  box-shadow: 10px 7px 30px rgb(247, 124, 227);
   margin: 15px;
   float: left;  
 }
 
+.box:hover .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px black;
+  background-color: #d1a0ff;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.box:hover {
+  transition-duration:350ms;
+  font-size: 19px;
+  width: 350px;
+  white-space: nowrap;
+  transform: translateX(5px) translateY(-15px);
+}
+
 .box {
-    width: 400px;
-    height: 120px;
-    margin: 30px;
+    width: 350px;
+    height: 100px;
+    margin: 50px;
   }
